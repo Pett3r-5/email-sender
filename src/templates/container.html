@@ -1,0 +1,21 @@
+<div class="col-md-8 col-md-offset-2" style="padding: 30px; background-color: rgb(240, 240, 230);">
+  <form ng-submit="cliqueSubmit($event, emailContent)">
+
+    <div class="row">
+      <h4>{{descricao}}</h4>
+      <input-field props=fromProps></input-field>
+      <input-field props=toProps></input-field>
+      <input-field props=titleProps></input-field>
+      <textarea ng-model="formText" class="form-control" style="height: 200px"></textarea>
+      <div class="form-group pull-right" style="margin-top: 20px; margin-bottom: 50px">
+        <input class="btn btn-primary" type="submit"></input>
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-10"  style="border: solid gray 1px">
+        <color-button></color-button>
+        <color-button></color-button>
+      </div>
+    </div>
+  </form>
+</div>

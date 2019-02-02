@@ -1,0 +1,4 @@
+<div class="form-group">
+  <label ng-if="props.name !== 'text'" for="{{props.id}}">{{props.name}}</label>
+  <input class="form-control" ng-model="props.ngModel" ng-change="sobe(props.ngModel, props.name)"id="{{props.id}}" name="{{props.name}}" style="{{props.style}}" type="{{props.type}}"></input>
+</div>
