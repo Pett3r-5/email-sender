@@ -1,4 +1,4 @@
-app.service('serverRequests', function($http){
+app.service('serverRequests', ['$http', function($http){
   vm = this;
   vm.postMail = function(mailData) {
     return $http.post('localhost:8080/mail', mailData)
@@ -6,4 +6,4 @@ app.service('serverRequests', function($http){
   vm.get = function() {
     return $http.get('localhost:8080/mail')
   }
-})
+}])

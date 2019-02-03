@@ -1,4 +1,4 @@
-app.controller('base', function($scope, serverRequests){
+app.controller('base', ['$scope', 'serverRequests', function($scope, serverRequests){
   var vm = this;
   vm.veme = 'final'
   $scope.init = 'inicial';
@@ -66,4 +66,4 @@ app.controller('base', function($scope, serverRequests){
       console.log(error)
   })
   }
-})
+}])

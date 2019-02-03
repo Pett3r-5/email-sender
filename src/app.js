@@ -8,7 +8,7 @@ var app = angular.module('indexExemplo', ['ui.router', 'ngRoute'])
 
   // $rootScope.apply()
 
-}).config(function($stateProvider, $locationProvider, $routeProvider){
+}).config([ '$stateProvider', '$locationProvider', '$routeProvider', function($stateProvider, $locationProvider, $routeProvider){
   $locationProvider.hashPrefix('!');
 
   $routeProvider
@@ -25,4 +25,4 @@ var app = angular.module('indexExemplo', ['ui.router', 'ngRoute'])
   //     auth: true
   //   }
   // })
-})
+}])

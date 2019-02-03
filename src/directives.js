@@ -21,7 +21,7 @@ app.directive('containerBase', function(){
   }
 })
 
-app.directive('inputField', function($timeout){
+app.directive('inputField', [ '$timeout', function($timeout){
   return {
     scope: {
       props: '='
@@ -45,7 +45,7 @@ app.directive('inputField', function($timeout){
       }, 0)
     }
   }
-})
+}])
 
 app.directive('colorButton', function(){
   return {
